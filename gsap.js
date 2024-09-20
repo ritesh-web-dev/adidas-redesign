@@ -1,6 +1,23 @@
 window.addEventListener("load",()=>{
-    navbarAnimation();
+  const loader = document.querySelector(".loader");
+  loader.style.display="none";
+
+ navbarAnimation();
 })
+
+function loader() {
+  gsap.from(".loader span",{
+    opacity:0,
+    stagger:0.1,
+    repeat:-1
+  },"0.1")
+  gsap.from(".loader img",{
+    opacity:0,
+    duration:0.5,
+    x:-20,
+  },"0.1")
+}
+loader()
 
 
 var tl = gsap.timeline({defaults:{ease:"power2.inOut"}});

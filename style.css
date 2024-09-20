@@ -23,6 +23,31 @@ body {
   overflow-x: hidden;
 }
 
+/* loader  */
+.loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  gap: 30px;
+}
+.loader img{
+  width: 17vw;
+}
+
+.loader span{
+  color: #000000;
+  font-size: 20vh;
+  font-family: var(--primary-text);
+  font-weight: 700;
+}
+/* nav  */
 nav {
   display: flex;
   justify-content: center;
