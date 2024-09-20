@@ -149,6 +149,12 @@ ul .fa-bars-staggered{
   left: 5vw;
   z-index: 10;
 }
+.hero span:nth-child(6){
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
 .img-rohit {
   width: 100%;
@@ -561,9 +567,11 @@ ul .fa-bars-staggered{
   height: 100%;
   display:flex;
   justify-content:space-around;
+  /* gap: 10px; */
   align-items:center;
   flex-wrap: wrap;
   padding: 0px 0px 0px 100px;
+  margin-top: 100px;
 }
 
 .footer-item{
@@ -608,17 +616,22 @@ transform: translateY(-6px);
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width:900px){
   .section-adidas-video{
     margin-top: 60vh;
+  }
+  .footer-container{
+    gap: 10px;
+  }
+}
+@media (max-width:720px){
+  .footer-container{
+    gap: 40px;
+  }
+}
+@media (max-width:700px){
+  .footer-container{
+    gap: 80px;
   }
 }
 @media (max-width:600px){
@@ -630,4 +643,10 @@ transform: translateY(-6px);
   .section-adidas-video{
     margin-top: 200vh;
   }
+}
+
+/* ********************** */
+.section-for-footer-styling{
+height: 10vh;
+width: 100vw;
 }
