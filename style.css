@@ -132,10 +132,11 @@ ul .fa-bars-staggered{
   gap: 70px;
 }
 .ul-items li {
-  color: black;
   list-style: none;
   cursor: pointer;
 }
+
+
 
 .ul-items li a {
   color: #000;
@@ -152,8 +153,9 @@ ul .fa-bars-staggered{
   background-color: black;
 }
 
+
 .active{
-  color: white;
+  color: white !important;
   background-color: black;
 }
 
